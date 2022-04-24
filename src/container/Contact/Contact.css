@@ -1,0 +1,91 @@
+.contact {
+  width: 100vw;
+  /* height: 100vh; */
+  padding: 3rem 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact span {
+  font-family: "DM Sans";
+  color: #538cb4;
+  text-align: center;
+  font-size: 20px;
+}
+.contact h2 {
+  max-width: 650px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 66px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.contact div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+textarea,
+input {
+  background: transparent;
+  border: 1px solid #9394af;
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+textarea {
+  resize: none;
+  width: 500px;
+  min-height: 100px;
+}
+.contact-one {
+  display: flex;
+  flex-direction: column;
+}
+.contact-two {
+  width: 500px;
+  display: flex;
+}
+input {
+  flex: 1;
+}
+
+.contact button {
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
+  text-align: center;
+  background-color: #538cb4;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 820px) {
+  .contact {
+    width: 100vw;
+  }
+  textarea {
+    width: 70vw;
+  }
+
+  .contact-two {
+    width: 70vw;
+    display: flex;
+  }
+  .contact p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .contact h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contact-two {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 5rem;
+  background-color: #010101;
+  z-index: 10000000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+}
+.navbar h2 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul li {
+  display: inline;
+  margin: 0 20px;
+  /* border-bottom: 2px solid #fff; */
+}
+.navbar ul a {
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #fff;
+  padding-bottom: 5px;
+  transition: linear 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar ul a:hover {
+  border-bottom-color: #fff;
+}
+.nav-links2 {
+  display: none;
+}
+.isOpen {
+  display: flex;
+}
+.isClosed {
+  display: none;
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 920px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #010101;
+    align-items: baseline;
+  }
+  .navbar h2 {
+    font-size: 30px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .nav-links2 {
+    background-color: #fff;
+    color: #222;
+    border: 0.1px solid #ccc;
+    /* display: flex;
+        display: none; */
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    position: fixed;
+    top: 3rem;
+    right: 4rem;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #222;
+    margin: 7px 15px 7px 7px;
+    text-decoration: none;
+    z-index: 10020;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 2px solid transparent;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding-bottom: 5px;
+    transition: linear 0.3s;
+    font-family: "Montserrat", sans-serif;
+  }
+  .menu-btn {
+    display: block;
+    /* position: fixed;
+    top: 2rem;
+    right: 1rem; */
+    z-index: 9000;
+    cursor: pointer;
+  }
+  .menu-btn svg {
+    font-size: 30px;
+    color: #fff;
+  }
+}

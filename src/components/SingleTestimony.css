@@ -1,0 +1,36 @@
+.singletestimony {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 320px;
+  margin: 1.5rem;
+  border: 1px solid #9394af;
+  border-radius: 5px;
+  font-family: "DM Sans";
+}
+.singletestimony img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.singletestimony div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.singletestimony div span {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  color: #538cb4;
+}
+.singletestimony p {
+  color: #9394af;
+  margin: 0.75rem;
+}
+.singletestimony div p {
+  color: grey;
+  margin-left: 1rem;
+  font-size: 13px;
+}
