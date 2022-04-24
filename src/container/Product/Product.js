@@ -14,7 +14,7 @@ const Product = () => {
           <MobileStoreButton
             store="android"
             url="#"
-            height={100}
+            height={90}
             linkProps={{ title: "Android Store Button" }}
           />
           <MobileStoreButton
